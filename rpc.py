@@ -17,7 +17,7 @@ def init(interface_queue, cfg):
         else:
             rpcport = '8332'
         proto = "http"
-        if cfg.get('rpcssl') and cfg.get('rpcssl') == "1"
+        if cfg.get('rpcssl') and cfg.get('rpcssl') == "1":
             proto = "https"
 
         rpcurl = proto + "://" + rpcuser + ":" + rpcpassword + "@" + rpcip + ":" + rpcport
